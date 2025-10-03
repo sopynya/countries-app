@@ -1,0 +1,236 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  color: hsl(200, 15%, 8%);
+}
+header {
+  background-color: white;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.087);
+}
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+header p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.fa-magnifying-glass {
+  color: hsl(0, 0%, 50%);
+}
+#countriesSection {
+  margin: 50px auto;
+  max-width: 1200px;
+}
+#search {
+  display: flex;
+  background-color: hsl(0, 100%, 100%);
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.095);
+  width: 400px;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 5px;
+  gap: 20px;
+  cursor: pointer;
+}
+#search input {
+  border: none;
+  font-size: 14px;
+  width: 80%;
+}
+#search input:focus {
+  outline: none;
+}
+#search input::placeholder {
+  color: hsl(0, 0%, 50%);
+}
+#filtering {
+  display: flex;
+  justify-content: space-between;
+}
+#filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.085);
+  border-radius: 5px;
+  background-color: white;
+  width: 150px;
+  position: relative;
+  cursor: pointer;
+}
+#filter p {
+  margin: 0;
+  font-size: 14px;
+}
+.fa-chevron-down {
+  transform: scale(65%);
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 50px 0;
+  padding: 0;
+  justify-content:space-between;
+}
+.country {
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin: 0;
+  list-style: none;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 340px;
+  cursor: pointer;
+}
+.country img {
+  width: 250px;
+}
+#info {
+  padding: 0 20px ;
+}
+.country h2 {
+  margin: 0;
+  font-size: 20px;
+  margin: 15px 0;
+}
+.country p {
+  margin: 0 0 5px 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+a{
+  text-decoration: none;
+  color: hsl(200, 15%, 8%);
+}
+#country {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 50px;
+  height: 550px;
+  gap: 100px;
+  width: 100%;
+}
+#country img {
+  width: 500px;
+}
+#country a {
+  position: absolute;
+  top: 0;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.36);
+  font-size: 13px;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+#countryInfo h1 {
+  font-size: 28px;
+  margin: 10px 0;
+  font-weight: 800;
+}
+.flex {
+  display: flex;
+}
+#country p {
+  font-weight: 700;
+  margin: 10px 0;
+  width: 300px;
+}
+.information {
+  font-weight: 400;
+}
+#border {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#border p {
+  margin: 0;
+  font-weight: 600;
+  width: 150px;
+}
+
+.borderList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.borderCountry {
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.182);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+#region {
+  position: absolute;
+  box-shadow: 0 2px 30px rgba(5, 5, 5, 0.044);
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+}
+#region p {
+  margin: 15px 20px;
+}
+.dark {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 100%, 100%);
+  min-height: 110vh;
+  padding: 0;
+  margin: 0;
+}
+.dark a {
+  color: hsl(0, 100%, 100%);
+}
+.dark header{
+  background-color: hsl(209, 23%, 22%);
+}
+.dark #search {
+  background-color: hsl(209, 23%, 22%);
+}
+.dark input {
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+}
+.dark #search input::placeholder {
+  color: white;
+}
+.dark #filter {
+  background-color: hsl(209, 23%, 22%);
+}
+.dark .country {
+  background-color: hsl(209, 23%, 22%);
+}
+.dark #region {
+  background-color: hsl(209, 23%, 22%);
+}
+.dark .fa-magnifying-glass {
+  color: white;
+}
+.dark .borderCountry {
+  background-color: hsl(209, 23%, 22%);
+}
+.dark #country a {
+  background-color: hsl(209, 23%, 22%);
+}
+.dark body {
+  background-color: hsl(207, 26%, 17%);
+}
